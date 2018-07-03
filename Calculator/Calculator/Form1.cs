@@ -18,59 +18,37 @@ namespace Calculator
         }
         
       
-        double Result;
-        private void TextBox1_TextChanged(object sender, EventArgs e)
+        
+        private void button4_Click_1(object sender, EventArgs e)
         {
-            //string FirstNumString = textBoxFirstIn.Text;
-            //textBoxFirstIn.Text = FirstNumString;
-            //double FirstNum = Convert.ToDouble(FirstNumString);
-        }
-
-        private void textBoxSecondIn_TextChanged(object sender, EventArgs e)
-        {
-            //string SecondNumString = textBoxSecondIn.Text;
-            //textBoxSecondIn.Text = SecondNumString;
-            //double SecondNum = Convert.ToDouble(SecondNumString);
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
+            double Result;
             string FirstNumString = textBoxFirstIn.Text;
             double FirstNum = Convert.ToDouble(FirstNumString);
             string SecondNumString = textBoxSecondIn.Text;
             double SecondNum = Convert.ToDouble(SecondNumString);
-            Result = FirstNum + SecondNum;
-            textBoxOut.Text = Result.ToString();
-        }
+            switch (((Button)sender).Name)
+            {
+                case "button1":
+                    Result = FirstNum + SecondNum;
+                    textBoxOut.Text = Result.ToString();
+                    break;
+                case "button2":
+                    Result = FirstNum - SecondNum;
+                    textBoxOut.Text = Result.ToString();
+                    break;
+                case "button3":
+                    Result = FirstNum * SecondNum;
+                    textBoxOut.Text = Result.ToString();
+                    break;
+                case "button4":
+                    Result = FirstNum / SecondNum;
+                    textBoxOut.Text = Result.ToString();
+                    break;
+                default:
+                    throw new Exception("Неизвестная операция");
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            string FirstNumString = textBoxFirstIn.Text;
-            double FirstNum = Convert.ToDouble(FirstNumString);
-            string SecondNumString = textBoxSecondIn.Text;
-            double SecondNum = Convert.ToDouble(SecondNumString);
-            Result = FirstNum - SecondNum;
-            textBoxOut.Text = Result.ToString();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            string FirstNumString = textBoxFirstIn.Text;
-            double FirstNum = Convert.ToDouble(FirstNumString);
-            string SecondNumString = textBoxSecondIn.Text;
-            double SecondNum = Convert.ToDouble(SecondNumString);
-            Result = FirstNum * SecondNum;
-            textBoxOut.Text = Result.ToString();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            string FirstNumString = textBoxFirstIn.Text;
-            double FirstNum = Convert.ToDouble(FirstNumString);
-            string SecondNumString = textBoxSecondIn.Text;
-            double SecondNum = Convert.ToDouble(SecondNumString);
-            Result = FirstNum / SecondNum;
-            textBoxOut.Text = Result.ToString();
+            }
+           
         }
     }
 }
