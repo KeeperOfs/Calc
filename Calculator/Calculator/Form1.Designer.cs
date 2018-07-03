@@ -35,6 +35,8 @@
             this.minus = new System.Windows.Forms.Button();
             this.multiply = new System.Windows.Forms.Button();
             this.division = new System.Windows.Forms.Button();
+            this.root = new System.Windows.Forms.Button();
+            this.ln = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxFirstIn
@@ -63,7 +65,7 @@
             // 
             // sum
             // 
-            this.sum.Location = new System.Drawing.Point(65, 143);
+            this.sum.Location = new System.Drawing.Point(24, 143);
             this.sum.Name = "sum";
             this.sum.Size = new System.Drawing.Size(75, 47);
             this.sum.TabIndex = 3;
@@ -73,7 +75,7 @@
             // 
             // minus
             // 
-            this.minus.Location = new System.Drawing.Point(180, 143);
+            this.minus.Location = new System.Drawing.Point(130, 143);
             this.minus.Name = "minus";
             this.minus.Size = new System.Drawing.Size(75, 47);
             this.minus.TabIndex = 4;
@@ -83,7 +85,7 @@
             // 
             // multiply
             // 
-            this.multiply.Location = new System.Drawing.Point(65, 214);
+            this.multiply.Location = new System.Drawing.Point(24, 214);
             this.multiply.Name = "multiply";
             this.multiply.Size = new System.Drawing.Size(75, 47);
             this.multiply.TabIndex = 5;
@@ -93,7 +95,7 @@
             // 
             // division
             // 
-            this.division.Location = new System.Drawing.Point(180, 214);
+            this.division.Location = new System.Drawing.Point(130, 214);
             this.division.Name = "division";
             this.division.Size = new System.Drawing.Size(75, 47);
             this.division.TabIndex = 6;
@@ -101,11 +103,33 @@
             this.division.UseVisualStyleBackColor = true;
             this.division.Click += new System.EventHandler(this.button4_Click_1);
             // 
+            // root
+            // 
+            this.root.Location = new System.Drawing.Point(229, 143);
+            this.root.Name = "root";
+            this.root.Size = new System.Drawing.Size(75, 47);
+            this.root.TabIndex = 7;
+            this.root.Text = "Sqrt";
+            this.root.UseVisualStyleBackColor = true;
+            this.root.Click += new System.EventHandler(this.ln_Click);
+            // 
+            // ln
+            // 
+            this.ln.Location = new System.Drawing.Point(229, 214);
+            this.ln.Name = "ln";
+            this.ln.Size = new System.Drawing.Size(75, 47);
+            this.ln.TabIndex = 8;
+            this.ln.Text = "ln";
+            this.ln.UseVisualStyleBackColor = true;
+            this.ln.Click += new System.EventHandler(this.ln_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(327, 273);
+            this.Controls.Add(this.ln);
+            this.Controls.Add(this.root);
             this.Controls.Add(this.division);
             this.Controls.Add(this.multiply);
             this.Controls.Add(this.minus);
@@ -129,6 +153,8 @@
         private System.Windows.Forms.Button minus;
         private System.Windows.Forms.Button multiply;
         private System.Windows.Forms.Button division;
+        private System.Windows.Forms.Button root;
+        private System.Windows.Forms.Button ln;
     }
 }
 

@@ -29,5 +29,14 @@ namespace Calculator
             double result = calculator.Calculate(firstArgument, secondArgument);
             textBoxOut.Text = result.ToString();
         }
+
+        private void ln_Click(object sender, EventArgs e)
+        {
+            string ArgumentString = textBoxFirstIn.Text;
+            double Argument = Convert.ToDouble(ArgumentString);
+            ISingleArgumentCalculatorcs singlecalculator = SingleArgumentFactory.CreateSingleCalculate(((Button)sender).Name);
+            double result = singlecalculator.SingleCalculate(Argument);
+            textBoxOut.Text = result.ToString();
+        }
     }
 }
