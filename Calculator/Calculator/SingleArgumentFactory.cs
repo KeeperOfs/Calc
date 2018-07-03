@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator
 {
@@ -16,6 +12,12 @@ namespace Calculator
                     return new SqrtRoot();
                 case "ln":
                     return new Logarithm();
+                case "sin":
+                    return new Sin();
+                case "cos":
+                    return new Cos();
+                case "tan":
+                    return new Tan();
                 default:
                     throw new Exception("Неизвестная операция");
             }

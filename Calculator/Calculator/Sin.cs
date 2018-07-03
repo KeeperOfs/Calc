@@ -2,11 +2,12 @@
 
 namespace Calculator
 {
-    class SqrtRoot : ISingleArgumentCalculatorcs
+    class Sin : ISingleArgumentCalculatorcs
     {
         public double SingleCalculate(double Argument)
-        {
-            return Math.Sqrt(Argument);
-        }
+    {
+        return Math.Sin(Argument);
+    }
+    
     }
 }

@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator
 {
-    class TwoArgumentsFactory
+    public class TwoArgumentsFactory
     {
-        public static ITwoArgumentsCalculator CreateCalculate(string name) {
+        public static ITwoArgumentsCalculator CreateCalculator(string name) {
             switch (name)
             {
                 case "sum":
