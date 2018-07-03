@@ -21,34 +21,13 @@ namespace Calculator
         
         private void button4_Click_1(object sender, EventArgs e)
         {
-            double Result;
-            string FirstNumString = textBoxFirstIn.Text;
-            double FirstNum = Convert.ToDouble(FirstNumString);
-            string SecondNumString = textBoxSecondIn.Text;
-            double SecondNum = Convert.ToDouble(SecondNumString);
-            switch (((Button)sender).Name)
-            {
-                case "button1":
-                    Result = FirstNum + SecondNum;
-                    textBoxOut.Text = Result.ToString();
-                    break;
-                case "button2":
-                    Result = FirstNum - SecondNum;
-                    textBoxOut.Text = Result.ToString();
-                    break;
-                case "button3":
-                    Result = FirstNum * SecondNum;
-                    textBoxOut.Text = Result.ToString();
-                    break;
-                case "button4":
-                    Result = FirstNum / SecondNum;
-                    textBoxOut.Text = Result.ToString();
-                    break;
-                default:
-                    throw new Exception("Неизвестная операция");
-
-            }
-           
+            string firstArgumentString = textBoxFirstIn.Text;
+            double firstArgument = Convert.ToDouble(firstArgumentString);
+            string secondArgumentString = textBoxSecondIn.Text;
+            double secondArgument = Convert.ToDouble(secondArgumentString);
+            ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculate(((Button)sender).Name);
+            double result = calculator.Calculate(firstArgument, secondArgument);
+            textBoxOut.Text = result.ToString();
         }
     }
 }
