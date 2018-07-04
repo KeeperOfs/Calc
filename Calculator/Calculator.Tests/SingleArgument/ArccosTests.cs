@@ -9,22 +9,26 @@ using NUnit.Framework;
 namespace Calculator.Tests.SingleArgument
 {
     [TestFixture]
-    class SqrtRootTests
+    class ArccosTests
     {
-        [TestCase(64, 8)]
-        [TestCase(81, 9)]
+        [TestCase(0.5, 1.0471975)]
+        [TestCase(0.3, 1.2661036)]
         public void CalculateTest(double value, double expected)
         {
-            var calculator = new SqrtRoot();
+            var calculator = new Arcsin();
             var actualResult = calculator.SingleCalculate(value);
-            Assert.AreEqual(expected, actualResult);
+            Assert.AreEqual(expected, actualResult, 0.00001);
         }
-
         [Test]
         public void CalculateTest()
         {
             ISingleArgumentCalculatorcs singlecalculator = SingleArgumentFactory.CreateSingleCalculate("root");
             Assert.Throws<Exception>(() => singlecalculator.SingleCalculate(-5));
         }
+
+
+
+
+
     }
 }

@@ -20,5 +20,12 @@ namespace Calculator.Tests.TwoArguments
             var actualResult = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, actualResult);
         }
+        [Test]
+        public void CalculateTest()
+        {
+            ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator("division");
+            Assert.Throws<Exception>(() => calculator.Calculate(5, 0));
+
+        }
     }
 }

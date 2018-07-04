@@ -20,6 +20,10 @@ namespace Calculator.SingleArgument
                     return new Tan();
                 case "x2":
                     return new Xin2();
+                case "arcsin":
+                    return new Arcsin();
+                case "arccos":
+                    return new Arccos();
                 default:
                     throw new Exception("Неизвестная операция");
             }
