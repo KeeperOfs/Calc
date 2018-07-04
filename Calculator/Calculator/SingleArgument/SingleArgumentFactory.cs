@@ -18,6 +18,8 @@ namespace Calculator.SingleArgument
                     return new Cos();
                 case "tan":
                     return new Tan();
+                case "x2":
+                    return new Xin2();
                 default:
                     throw new Exception("Неизвестная операция");
             }

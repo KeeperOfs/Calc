@@ -4,9 +4,9 @@ namespace Calculator.SingleArgument
 {
     class Cos : ISingleArgumentCalculatorcs
     {
-        public double SingleCalculate(double Argument)
+        public double SingleCalculate(double argument)
     {
-        return Math.Cos(Argument);
+        return Math.Cos(argument);
     }
     
     }

@@ -4,9 +4,9 @@ namespace Calculator.SingleArgument
 {
     class SqrtRoot : ISingleArgumentCalculatorcs
     {
-        public double SingleCalculate(double Argument)
+        public double SingleCalculate(double argument)
         {
-            return Math.Sqrt(Argument);
+            return Math.Sqrt(argument);
         }
     }
 }

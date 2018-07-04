@@ -2,12 +2,11 @@
 
 namespace Calculator.SingleArgument
 {
-    class Tan : ISingleArgumentCalculatorcs
+    class Xin2 : ISingleArgumentCalculatorcs
     {
         public double SingleCalculate(double argument)
         {
-            return Math.Tan(argument);
+            return Math.Pow(argument, 2);
         }
-    
     }
 }

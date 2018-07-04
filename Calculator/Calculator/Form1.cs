@@ -27,10 +27,10 @@ namespace Calculator
 
         private void ln_Click(object sender, EventArgs e)
         {
-            string ArgumentString = textBoxFirstIn.Text;
-            double Argument = Convert.ToDouble(ArgumentString);
+            string argumentString = textBoxFirstIn.Text;
+            double argument = Convert.ToDouble(argumentString);
             ISingleArgumentCalculatorcs singlecalculator = SingleArgumentFactory.CreateSingleCalculate(((Button)sender).Name);
-            double result = singlecalculator.SingleCalculate(Argument);
+            double result = singlecalculator.SingleCalculate(argument);
             textBoxOut.Text = result.ToString();
         }
     }

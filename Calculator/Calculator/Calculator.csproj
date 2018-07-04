@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="SingleArgument\Cos.cs" />
+    <Compile Include="SingleArgument\Xin2.cs" />
     <Compile Include="TwoArguments\Division.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

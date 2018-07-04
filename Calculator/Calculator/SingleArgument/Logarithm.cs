@@ -4,9 +4,9 @@ namespace Calculator.SingleArgument
 {
     class Logarithm : ISingleArgumentCalculatorcs
     {
-        public double SingleCalculate(double Argument)
+        public double SingleCalculate(double argument)
         {
-            return Math.Log(Argument);
+            return Math.Log(argument);
         }
    
     }

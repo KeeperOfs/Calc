@@ -4,9 +4,9 @@ namespace Calculator.SingleArgument
 {
     class Sin : ISingleArgumentCalculatorcs
     {
-        public double SingleCalculate(double Argument)
+        public double SingleCalculate(double argument)
     {
-        return Math.Sin(Argument);
+        return Math.Sin(argument);
     }
     
     }

@@ -2,6 +2,6 @@
 {
     interface ISingleArgumentCalculatorcs
     {
-        double SingleCalculate(double Argument);
+        double SingleCalculate(double argument);
     }
 }

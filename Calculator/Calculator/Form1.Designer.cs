@@ -40,6 +40,7 @@
             this.sin = new System.Windows.Forms.Button();
             this.cos = new System.Windows.Forms.Button();
             this.tan = new System.Windows.Forms.Button();
+            this.x2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxFirstIn
@@ -156,11 +157,22 @@
             this.tan.UseVisualStyleBackColor = true;
             this.tan.Click += new System.EventHandler(this.ln_Click);
             // 
+            // x2
+            // 
+            this.x2.Location = new System.Drawing.Point(237, 214);
+            this.x2.Name = "x2";
+            this.x2.Size = new System.Drawing.Size(47, 47);
+            this.x2.TabIndex = 12;
+            this.x2.Text = "x^2";
+            this.x2.UseVisualStyleBackColor = true;
+            this.x2.Click += new System.EventHandler(this.ln_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(327, 273);
+            this.Controls.Add(this.x2);
             this.Controls.Add(this.tan);
             this.Controls.Add(this.cos);
             this.Controls.Add(this.sin);
@@ -194,6 +206,7 @@
         private System.Windows.Forms.Button sin;
         private System.Windows.Forms.Button cos;
         private System.Windows.Forms.Button tan;
+        private System.Windows.Forms.Button x2;
     }
 }
 
