@@ -43,6 +43,9 @@
             this.x2 = new System.Windows.Forms.Button();
             this.arcsin = new System.Windows.Forms.Button();
             this.arccos = new System.Windows.Forms.Button();
+            this.arctan = new System.Windows.Forms.Button();
+            this.arcctg = new System.Windows.Forms.Button();
+            this.ctg = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxFirstIn
@@ -189,11 +192,44 @@
             this.arccos.UseVisualStyleBackColor = true;
             this.arccos.Click += new System.EventHandler(this.ln_Click);
             // 
+            // arctan
+            // 
+            this.arctan.Location = new System.Drawing.Point(267, 90);
+            this.arctan.Name = "arctan";
+            this.arctan.Size = new System.Drawing.Size(47, 47);
+            this.arctan.TabIndex = 15;
+            this.arctan.Text = "Arctan";
+            this.arctan.UseVisualStyleBackColor = true;
+            this.arctan.Click += new System.EventHandler(this.ln_Click);
+            // 
+            // arcctg
+            // 
+            this.arcctg.Location = new System.Drawing.Point(267, 33);
+            this.arcctg.Name = "arcctg";
+            this.arcctg.Size = new System.Drawing.Size(47, 47);
+            this.arcctg.TabIndex = 16;
+            this.arcctg.Text = "Arcctg";
+            this.arcctg.UseVisualStyleBackColor = true;
+            this.arcctg.Click += new System.EventHandler(this.ln_Click);
+            // 
+            // ctg
+            // 
+            this.ctg.Location = new System.Drawing.Point(1, 90);
+            this.ctg.Name = "ctg";
+            this.ctg.Size = new System.Drawing.Size(47, 47);
+            this.ctg.TabIndex = 17;
+            this.ctg.Text = "Ctg";
+            this.ctg.UseVisualStyleBackColor = true;
+            this.ctg.Click += new System.EventHandler(this.ln_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(327, 273);
+            this.Controls.Add(this.ctg);
+            this.Controls.Add(this.arcctg);
+            this.Controls.Add(this.arctan);
             this.Controls.Add(this.arccos);
             this.Controls.Add(this.arcsin);
             this.Controls.Add(this.x2);
@@ -233,6 +269,9 @@
         private System.Windows.Forms.Button x2;
         private System.Windows.Forms.Button arcsin;
         private System.Windows.Forms.Button arccos;
+        private System.Windows.Forms.Button arctan;
+        private System.Windows.Forms.Button arcctg;
+        private System.Windows.Forms.Button ctg;
     }
 }
 

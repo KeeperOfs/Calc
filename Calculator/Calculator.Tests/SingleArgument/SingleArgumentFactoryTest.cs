@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Calculator.SingleArgument;
 using NUnit.Framework;
 
@@ -17,6 +13,11 @@ namespace Calculator.Tests.SingleArgument
         [TestCase("ln", typeof(Logarithm))]
         [TestCase("root", typeof(SqrtRoot))]
         [TestCase("x2", typeof(Xin2))]
+        [TestCase("ctg", typeof(Ctg))]
+        [TestCase("arccos", typeof(Arccos))]
+        [TestCase("arcsin", typeof(Arcsin))]
+        [TestCase("arctan", typeof(Arctan))]
+        [TestCase("arcctg", typeof(Arcctg))]
         public void SingleCalculateTest(string name, Type type)
         {
             var calculator = SingleArgumentFactory.CreateSingleCalculate(name);

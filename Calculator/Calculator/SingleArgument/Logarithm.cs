@@ -6,6 +6,10 @@ namespace Calculator.SingleArgument
     {
         public double SingleCalculate(double argument)
         {
+            if (argument < 0)
+            {
+                throw new Exception("Логарифм отрицательного");
+            }
             return Math.Log(argument);
         }
    

@@ -49,8 +49,11 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SingleArgument\ArccosTests.cs" />
+    <Compile Include="SingleArgument\ArcctgTests.cs" />
     <Compile Include="SingleArgument\ArcsinTests.cs" />
+    <Compile Include="SingleArgument\ArctanTests.cs" />
     <Compile Include="SingleArgument\CosTests.cs" />
+    <Compile Include="SingleArgument\CtgTests.cs" />
     <Compile Include="SingleArgument\LogarithmTests.cs" />
     <Compile Include="SingleArgument\SingleArgumentFactoryTest.cs" />
     <Compile Include="SingleArgument\SinTests.cs" />

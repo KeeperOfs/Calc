@@ -24,6 +24,12 @@ namespace Calculator.SingleArgument
                     return new Arcsin();
                 case "arccos":
                     return new Arccos();
+                case "arctan":
+                    return new Arctan();
+                case "ctg":
+                    return new Ctg();
+                case "arcctg":
+                    return new Arcctg();
                 default:
                     throw new Exception("Неизвестная операция");
             }

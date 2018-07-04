@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Calculator.SingleArgument;
 using NUnit.Framework;
 
@@ -18,6 +14,12 @@ namespace Calculator.Tests.SingleArgument
             var calculator = new Logarithm();
             var actualResult = calculator.SingleCalculate(value);
             Assert.AreEqual(expected, actualResult, 0.0001);
+        }
+        [Test]
+        public void CalculateTest()
+        {
+            ISingleArgumentCalculatorcs singlecalculator = SingleArgumentFactory.CreateSingleCalculate("root");
+            Assert.Throws<Exception>(() => singlecalculator.SingleCalculate(-5));
         }
     }
 }

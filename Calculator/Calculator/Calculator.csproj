@@ -46,8 +46,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="SingleArgument\Arccos.cs" />
+    <Compile Include="SingleArgument\Arcctg.cs" />
     <Compile Include="SingleArgument\Arcsin.cs" />
+    <Compile Include="SingleArgument\Arctan.cs" />
     <Compile Include="SingleArgument\Cos.cs" />
+    <Compile Include="SingleArgument\Ctg.cs" />
     <Compile Include="SingleArgument\Xin2.cs" />
     <Compile Include="TwoArguments\Division.cs" />
     <Compile Include="Form1.cs">
