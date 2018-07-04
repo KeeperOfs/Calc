@@ -1,6 +1,6 @@
 ﻿namespace Calculator.SingleArgument
 {
-    interface ISingleArgumentCalculatorcs
+    public interface ISingleArgumentCalculatorcs
     {
         double SingleCalculate(double argument);
     }

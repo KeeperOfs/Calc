@@ -2,7 +2,7 @@
 
 namespace Calculator.SingleArgument
 {
-    class Xin2 : ISingleArgumentCalculatorcs
+    public class Xin2 : ISingleArgumentCalculatorcs
     {
         public double SingleCalculate(double argument)
         {

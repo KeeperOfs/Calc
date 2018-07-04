@@ -2,7 +2,7 @@
 
 namespace Calculator.SingleArgument
 {
-    class SqrtRoot : ISingleArgumentCalculatorcs
+    public class SqrtRoot : ISingleArgumentCalculatorcs
     {
         public double SingleCalculate(double argument)
         {

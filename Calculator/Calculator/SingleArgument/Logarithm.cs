@@ -2,7 +2,7 @@
 
 namespace Calculator.SingleArgument
 {
-    class Logarithm : ISingleArgumentCalculatorcs
+    public class Logarithm : ISingleArgumentCalculatorcs
     {
         public double SingleCalculate(double argument)
         {

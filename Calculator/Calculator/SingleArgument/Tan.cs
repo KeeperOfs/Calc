@@ -2,7 +2,7 @@
 
 namespace Calculator.SingleArgument
 {
-    class Tan : ISingleArgumentCalculatorcs
+    public class Tan : ISingleArgumentCalculatorcs
     {
         public double SingleCalculate(double argument)
         {
