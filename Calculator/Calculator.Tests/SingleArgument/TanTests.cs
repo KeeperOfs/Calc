@@ -8,14 +8,16 @@ using NUnit.Framework;
 
 namespace Calculator.Tests.SingleArgument
 {
+    [TestFixture]
     class TanTests
     {
-        [Test]
-        public void SingleCalculate()
+        [TestCase(0, 0)]
+        [TestCase(1, 1.5574077)]
+        public void CalculateTest(double value, double expected)
         {
-            ISingleArgumentCalculatorcs singlecalculator = SingleArgumentFactory.CreateSingleCalculate("tan");
-            double result = singlecalculator.SingleCalculate(0);
-            Assert.AreEqual(0, result);
+            var calculator = new Tan();
+            var actualResult = calculator.SingleCalculate(value);
+            Assert.AreEqual(expected, actualResult, 0.00001);
         }
     }
 }

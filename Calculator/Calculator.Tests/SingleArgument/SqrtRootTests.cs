@@ -8,14 +8,16 @@ using NUnit.Framework;
 
 namespace Calculator.Tests.SingleArgument
 {
+    [TestFixture]
     class SqrtRootTests
     {
-        [Test]
-        public void SingleCalculate()
+        [TestCase(64, 8)]
+        [TestCase(81, 9)]
+        public void CalculateTest(double value, double expected)
         {
-            ISingleArgumentCalculatorcs singlecalculator = SingleArgumentFactory.CreateSingleCalculate("root");
-            double result = singlecalculator.SingleCalculate(4);
-            Assert.AreEqual(2, result);
+            var calculator = new SqrtRoot();
+            var actualResult = calculator.SingleCalculate(value);
+            Assert.AreEqual(expected, actualResult);
         }
     }
 }

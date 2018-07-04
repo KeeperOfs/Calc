@@ -8,14 +8,16 @@ using NUnit.Framework;
 
 namespace Calculator.Tests.SingleArgument
 {
+    [TestFixture]
     class LogarithmTests
     {
-        [Test]
-        public void SingleCalculate()
+        [TestCase(1, 0)]
+        [TestCase(2.71828, 1)]
+        public void CalculateTest(double value, double expected)
         {
-            ISingleArgumentCalculatorcs singlecalculator = SingleArgumentFactory.CreateSingleCalculate("ln");
-            double result = singlecalculator.SingleCalculate(1);
-            Assert.AreEqual(0, result);
+            var calculator = new Logarithm();
+            var actualResult = calculator.SingleCalculate(value);
+            Assert.AreEqual(expected, actualResult, 0.0001);
         }
     }
 }

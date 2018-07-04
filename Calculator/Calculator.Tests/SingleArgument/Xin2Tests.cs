@@ -8,14 +8,16 @@ using NUnit.Framework;
 
 namespace Calculator.Tests.SingleArgument
 {
+    [TestFixture]
     class Xin2Tests
     {
-        [Test]
-        public void SingleCalculate()
+        [TestCase(10, 100)]
+        [TestCase(3, 9)]
+        public void CalculateTest(double value, double expected)
         {
-            ISingleArgumentCalculatorcs singlecalculator = SingleArgumentFactory.CreateSingleCalculate("x2");
-            double result = singlecalculator.SingleCalculate(4);
-            Assert.AreEqual(16, result);
+            var calculator = new Xin2();
+            var actualResult = calculator.SingleCalculate(value);
+            Assert.AreEqual(expected, actualResult);
         }
     }
 }

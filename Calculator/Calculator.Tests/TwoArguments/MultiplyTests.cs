@@ -8,14 +8,17 @@ using NUnit.Framework;
 
 namespace Calculator.Tests.TwoArguments
 {
+    [TestFixture]
     class MultiplyTests
     {
-        [Test]
-        public void CalculateTest()
+        [TestCase(5, 10, 50)]
+        [TestCase(6, 4, 24)]
+        [TestCase(9, 3, 27)]
+        public void CalculateTest(double firstValue, double secondValue, double expected)
         {
-            ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator("multiply");
-            double result = calculator.Calculate(3, 4);
-            Assert.AreEqual(12, result);
+            var calculator = new Multiply();
+            var actualResult = calculator.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, actualResult);
         }
     }
 }

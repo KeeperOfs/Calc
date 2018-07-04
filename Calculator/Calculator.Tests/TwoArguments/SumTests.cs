@@ -11,12 +11,14 @@ namespace Calculator.Tests.TwoArguments
         [TestFixture]
         public class SumTests
         {
-            [Test]
-            public void CalculateTest()
+            [TestCase(0, 0, 0)]
+            [TestCase(3, 4, 7)]
+            [TestCase(-7, -2, -9)]
+            public void CalculateTest(double firstValue, double secondValue, double expected)
             {
-                ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator("sum");
-                double result = calculator.Calculate(4,4);
-                Assert.AreEqual(8, result);
+                var calculator = new Sum();
+                var actualResult = calculator.Calculate(firstValue, secondValue);
+                Assert.AreEqual(expected, actualResult);
             }
-        }
     }
+}

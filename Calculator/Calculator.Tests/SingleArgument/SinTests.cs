@@ -11,12 +11,13 @@ namespace Calculator.Tests.SingleArgument
     [TestFixture]
     class SinTests
     {
-        [Test]
-        public void SingleCalculate()
+        [TestCase(0, 0)]
+        [TestCase(1, 0.8414709)]
+        public void CalculateTest(double value, double expected)
         {
-            ISingleArgumentCalculatorcs singlecalculator = SingleArgumentFactory.CreateSingleCalculate("sin");
-            double result = singlecalculator.SingleCalculate(0);
-            Assert.AreEqual(0, result);
+            var calculator = new Sin();
+            var actualResult = calculator.SingleCalculate(value);
+            Assert.AreEqual(expected, actualResult, 0.00001);
         }
     }
 }

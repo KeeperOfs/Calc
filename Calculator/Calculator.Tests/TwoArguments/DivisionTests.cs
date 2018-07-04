@@ -8,14 +8,17 @@ using NUnit.Framework;
 
 namespace Calculator.Tests.TwoArguments
 {
+    [TestFixture]
     class DivisionTests
     {
-        [Test]
-        public void CalculateTest()
+        [TestCase(6, 3, 2)]
+        [TestCase(8, 4, 2)]
+        [TestCase(9, 3, 3)]
+        public void CalculateTest(double firstValue, double secondValue, double expected)
         {
-            ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator("division");
-            double result = calculator.Calculate(44, 4);
-            Assert.AreEqual(11, result);
+            var calculator = new Division();
+            var actualResult = calculator.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, actualResult);
         }
     }
 }

@@ -11,12 +11,14 @@ namespace Calculator.Tests.TwoArguments
     [TestFixture]
     class MinusTests
     {
-        [Test]
-        public void CalculateTest()
+        [TestCase(4, 2, 2)]
+        [TestCase(5, 4, 1)]
+        [TestCase(8, 3, 5)]
+        public void CalculateTest(double firstValue, double secondValue, double expected)
         {
-            ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator("minus");
-            double result = calculator.Calculate(10, 4);
-            Assert.AreEqual(6, result);
+            var calculator = new Minus();
+            var actualResult = calculator.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, actualResult);
         }
     }
 }
