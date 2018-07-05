@@ -57,7 +57,7 @@
             // textBoxFirstIn
             // 
             this.textBoxFirstIn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxFirstIn.Location = new System.Drawing.Point(65, 22);
+            this.textBoxFirstIn.Location = new System.Drawing.Point(90, 21);
             this.textBoxFirstIn.Name = "textBoxFirstIn";
             this.textBoxFirstIn.Size = new System.Drawing.Size(190, 20);
             this.textBoxFirstIn.TabIndex = 0;
@@ -65,7 +65,7 @@
             // textBoxSecondIn
             // 
             this.textBoxSecondIn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxSecondIn.Location = new System.Drawing.Point(65, 60);
+            this.textBoxSecondIn.Location = new System.Drawing.Point(90, 59);
             this.textBoxSecondIn.Name = "textBoxSecondIn";
             this.textBoxSecondIn.Size = new System.Drawing.Size(190, 20);
             this.textBoxSecondIn.TabIndex = 1;
@@ -73,7 +73,7 @@
             // textBoxOut
             // 
             this.textBoxOut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxOut.Location = new System.Drawing.Point(65, 98);
+            this.textBoxOut.Location = new System.Drawing.Point(90, 99);
             this.textBoxOut.Name = "textBoxOut";
             this.textBoxOut.Size = new System.Drawing.Size(190, 20);
             this.textBoxOut.TabIndex = 2;
@@ -160,7 +160,7 @@
             // 
             // tan
             // 
-            this.tan.Location = new System.Drawing.Point(2, 302);
+            this.tan.Location = new System.Drawing.Point(323, 249);
             this.tan.Name = "tan";
             this.tan.Size = new System.Drawing.Size(47, 47);
             this.tan.TabIndex = 11;
@@ -180,7 +180,7 @@
             // 
             // arcsin
             // 
-            this.arcsin.Location = new System.Drawing.Point(138, 302);
+            this.arcsin.Location = new System.Drawing.Point(323, 143);
             this.arcsin.Name = "arcsin";
             this.arcsin.Size = new System.Drawing.Size(47, 47);
             this.arcsin.TabIndex = 13;
@@ -190,7 +190,7 @@
             // 
             // arccos
             // 
-            this.arccos.Location = new System.Drawing.Point(269, 299);
+            this.arccos.Location = new System.Drawing.Point(322, 196);
             this.arccos.Name = "arccos";
             this.arccos.Size = new System.Drawing.Size(48, 47);
             this.arccos.TabIndex = 14;
@@ -292,7 +292,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(326, 358);
+            this.ClientSize = new System.Drawing.Size(382, 301);
             this.Controls.Add(this.remain);
             this.Controls.Add(this.average);
             this.Controls.Add(this.min);
