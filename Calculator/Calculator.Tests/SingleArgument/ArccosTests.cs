@@ -11,7 +11,7 @@ namespace Calculator.Tests.SingleArgument
         [TestCase(0.3, 1.2661036)]
         public void CalculateTest(double value, double expected)
         {
-            var calculator = new Arcsin();
+            var calculator = new Arccos();
             var actualResult = calculator.SingleCalculate(value);
             Assert.AreEqual(expected, actualResult, 0.00001);
         }

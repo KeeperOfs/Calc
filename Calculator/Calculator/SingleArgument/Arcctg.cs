@@ -6,7 +6,7 @@ namespace Calculator.SingleArgument
     {
         public double SingleCalculate(double argument)
         {
-            return 1 / Math.Atan(argument);
+            return Math.Atan(1 / argument);
         }
 
     }
