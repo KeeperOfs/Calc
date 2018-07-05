@@ -2,8 +2,16 @@
 
 namespace Calculator.SingleArgument
 {
-     public class SingleArgumentFactory
+    /// <summary>
+    /// factory, that choses a single argument calculating class by its name
+    /// </summary>
+    public class SingleArgumentFactory
     {
+        /// <summary>
+        /// method, that choses a single argument calculating class by its name
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns>SqrtRoot() or Logarithm() or Sin() or Cos() or Tan() or Xin2() or Arcsin() or Arccos() or Arctan() or Arcctg() or Ctg()</returns>
         public static ISingleArgumentCalculatorcs CreateSingleCalculate(string name)
         {
             switch (name)

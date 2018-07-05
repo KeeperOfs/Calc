@@ -60,11 +60,17 @@
     <Compile Include="SingleArgument\SqrtRootTests.cs" />
     <Compile Include="SingleArgument\TanTests.cs" />
     <Compile Include="SingleArgument\Xin2Tests.cs" />
+    <Compile Include="TwoArguments\AverageTests.cs" />
     <Compile Include="TwoArguments\DivisionTests.cs" />
+    <Compile Include="TwoArguments\MaxTests.cs" />
+    <Compile Include="TwoArguments\MinTests.cs" />
     <Compile Include="TwoArguments\MinusTests.cs" />
     <Compile Include="TwoArguments\MultiplyTests.cs" />
+    <Compile Include="TwoArguments\RemainTests.cs" />
     <Compile Include="TwoArguments\SumTests.cs" />
     <Compile Include="TwoArguments\TwoArgumentsFactoryTest.cs" />
+    <Compile Include="TwoArguments\XinReverseYTests.cs" />
+    <Compile Include="TwoArguments\XinYTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Calculator\Calculator.csproj">

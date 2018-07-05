@@ -11,6 +11,12 @@ namespace Calculator.Tests.TwoArguments
         [TestCase("minus", typeof(Minus))]
         [TestCase("multiply", typeof(Multiply))]
         [TestCase("division", typeof(Division))]
+        [TestCase("average", typeof(Average))]
+        [TestCase("max", typeof(Max))]
+        [TestCase("min", typeof(Min))]
+        [TestCase("remain", typeof(Remain))]
+        [TestCase("xiny", typeof(XinY))]
+        [TestCase("xinreversey", typeof(XinReverseY))]
         public void CalculateTest(string name, Type type)
         {
             var calculator = TwoArgumentsFactory.CreateCalculator(name);
